@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="custom_color_1">#ff7f00</color> //Button color
+    <color name="custom_color_2">#76ee00</color> //Form color
+    <color name="custom_color_3">#ff4040</color> //Border color
+    <color name="custom_txt_color_1">#adadad</color> // Text color
+</resources>
