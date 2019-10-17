@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final TextView ansScreen = findViewById(R.id.ansScreen);
-        final TextView calscreen = findViewById(R.id.calScreen);
+        final TextView calScreen = findViewById(R.id.calScreen);
         final Button num0 =  findViewById(R.id.num0);
         final Button num1 =  findViewById(R.id.num1);
         final Button num2 =  findViewById(R.id.num2);
@@ -47,137 +47,137 @@ public class MainActivity extends AppCompatActivity {
                 switch (id) {
                     case R.id.num0:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num0.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num0.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num1:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num1.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num1.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num2:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num2.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num2.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num3:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num3.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num3.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num4:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num4.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num4.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num5:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num5.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num5.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num6:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num6.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num6.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num7:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num7.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num7.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num8:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num8.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num8.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.num9:
                         if(isNumber == "x"){
-                            calscreen.setText("");
+                            calScreen.setText("");
                             isNumber = "";
                         }
-                        Enternumber  = calscreen.getText().toString() + num9.getText();
-                        calscreen.setText(Enternumber);
+                        Enternumber  = calScreen.getText().toString() + num9.getText();
+                        calScreen.setText(Enternumber);
                         break;
 
                     case R.id.division:
-                        firstnum  = Double.parseDouble(calscreen.getText().toString());
-                        calscreen.setText("");
+                        firstnum  = Double.parseDouble(calScreen.getText().toString());
+                        calScreen.setText("");
                         operation = "/";
                         ansScreen.setText(firstnum+"/");
                         break;
 
                     case R.id.multiply:
-                        firstnum  = Double.parseDouble(calscreen.getText().toString());
-                        calscreen.setText("");
+                        firstnum  = Double.parseDouble(calScreen.getText().toString());
+                        calScreen.setText("");
                         operation = "*";
                         ansScreen.setText(firstnum+"*");
                         break;
 
                     case R.id.minus:
-                        firstnum  = Double.parseDouble(calscreen.getText().toString());
-                        calscreen.setText("");
+                        firstnum  = Double.parseDouble(calScreen.getText().toString());
+                        calScreen.setText("");
                         operation = "-";
                         ansScreen.setText(firstnum+"-");
                         break;
 
                     case R.id.plus:
-                        firstnum  = Double.parseDouble(calscreen.getText().toString());
-                        calscreen.setText("");
+                        firstnum  = Double.parseDouble(calScreen.getText().toString());
+                        calScreen.setText("");
                         operation = "+";
                         ansScreen.setText(firstnum+"+");
                         break;
 
                     case R.id.dot:
-                        if(!calscreen.getText().toString().contains(".")) {
-                            Enternumber = calscreen.getText().toString() + dot.getText();
-                            calscreen.setText(Enternumber);
+                        if(!calScreen.getText().toString().contains(",")) {
+                            Enternumber = calScreen.getText().toString() + dot.getText();
+                            calScreen.setText(Enternumber);
                         }
                         break;
 
                     case R.id.equal:
                         String answer;
-                        secondnum =  Double.parseDouble(calscreen.getText().toString());
+                        secondnum =  Double.parseDouble(calScreen.getText().toString());
                         if (operation == "+")
                         {
                             result = firstnum+secondnum;
                             answer = String.format("%.0f",result);
-                            calscreen.setText(answer);
+                            calScreen.setText(answer);
                             ansScreen.setText("");
                         }
 
@@ -185,7 +185,7 @@ public class MainActivity extends AppCompatActivity {
                         {
                             result = firstnum-secondnum;
                             answer = String.format("%.0f",result);
-                            calscreen.setText(answer);
+                            calScreen.setText(answer);
                             ansScreen.setText("");
                         }
 
@@ -193,14 +193,14 @@ public class MainActivity extends AppCompatActivity {
                         {
                             result = firstnum*secondnum;
                             answer = String.format("%.0f",result);
-                            calscreen.setText(answer);
+                            calScreen.setText(answer);
                             ansScreen.setText("");
                         }
                         else if (operation == "/")
                         {
                             result = firstnum/secondnum;
                             answer = String.format("%.0f",result);
-                            calscreen.setText(answer);
+                            calScreen.setText(answer);
                             ansScreen.setText("");
                         }
                         if (operation != ""){
@@ -235,11 +235,11 @@ public class MainActivity extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String displayedElements = calscreen.getText().toString();
+                String displayedElements = calScreen.getText().toString();
                 int length = displayedElements.length();
                 if(length>0){
                     displayedElements = displayedElements.substring(0,length-1);
-                    calscreen.setText(displayedElements);
+                    calScreen.setText(displayedElements);
                 }
 
             }
@@ -249,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                calscreen.setText("");
+                calScreen.setText("");
                 ansScreen.setText("");
             }
         });
