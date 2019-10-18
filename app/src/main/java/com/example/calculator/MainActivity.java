@@ -10,6 +10,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     double firstnum=0;
     double secondnum=0;
+    double temp=0;
     double result;
     String operation;
     String isNumber;
@@ -208,6 +209,38 @@ public class MainActivity extends AppCompatActivity {
                         }
 
                         break;
+                       
+                     case R.id.percent:
+                       if(operation != "%")
+                       {
+                            switch (id) {
+                        case "":
+                         temp = temp / 100;
+                         break;
+                                    
+                        case "+":
+                         temp = Result + ((Result * firstnum) / 100);
+                         break;
+                                    
+                        case "-":
+                         temp = Result - ((Result * firstnum) / 100);
+                         break;
+                                    
+                        case "x":
+                         temp = Result * (firstnum / 100);
+                         break;
+                                    
+                        case "/":
+                         try {
+                        temp = Result / (firstnum / 100);
+                        } 
+                        catch (Exception e) {
+                        result = e.getMessage();
+                        }
+                        break;
+                )
+                           
+                        
 
                 }
             }
